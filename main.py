@@ -8,7 +8,7 @@
 ##################### IMPORTS ######################
 import pygame as pg
 import random as r
-from os import *
+from os import path
 
 # Custom Imports #
 from settings import *
@@ -45,8 +45,8 @@ class Game(object):
         self.map = Map(path.join(mapsFolder, "example_map1__large.txt"))
 
         # Loading player image
-        imgs = path.join(imageFolder, "Preview_110.png")
-        self.playerImage = pg.image.load(imgs).convert_alpha()
+        # imgs = path.join(imageFolder, "Preview_110.png")
+        # self.playerImage = pg.image.load(imgs).convert_alpha()
 
     def new(self):
         """ To use: self.new()
