@@ -3,7 +3,7 @@
 # PROJECT NAME: OFF_game__pythonVer
 # DATE CREATED: 04/21/2021
 # DATE LAST MODIFIED: 04/21/2021
-# PYTHON VER. USED: 3.8
+# PYTHON VER. USED: 3.x
 
 ################### IMPORTS ####################
 import pygame as pg
