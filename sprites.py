@@ -1,8 +1,8 @@
 # MADE BY: Lisette Spalding
 # FILE NAME: sprites.py
 # PROJECT NAME: OFF_game__pythonVer
-# DATE CREATED: 03/05/2021
-# DATE LAST MODIFIED: 03/05/2021
+# DATE CREATED: 04/21/2021
+# DATE LAST MODIFIED: 04/21/2021
 # PYTHON VER. USED: 3.8
 
 ################### IMPORTS ####################
@@ -47,15 +47,15 @@ class Player(pg.sprite.Sprite):
         keystate = pg.key.get_pressed()
 
         ########## !!!! .. FLOW MOVEMENT .. !!!! ##########
-        # if keystate[pg.K_LEFT] or keystate[pg.K_a]:
-        #     self.speedx += -5
-        # if keystate[pg.K_RIGHT] or keystate[pg.K_d]:
-        #     self.speedx = 5
-        # if keystate[pg.K_UP] or keystate[pg.K_w]:
-        #      self.speedy = -5
-        # if keystate[pg.K_DOWN] or keystate[pg.K_s]:
-        #      self.speedy = 5
-        #
+        if keystate[pg.K_LEFT] or keystate[pg.K_a]:
+            self.speedx += -5
+        if keystate[pg.K_RIGHT] or keystate[pg.K_d]:
+            self.speedx = 5
+        if keystate[pg.K_UP] or keystate[pg.K_w]:
+             self.speedy = -5
+        if keystate[pg.K_DOWN] or keystate[pg.K_s]:
+             self.speedy = 5
+
         self.rect.x += self.speedx
         self.rect.y += self.speedy
         ########## !!!! .. FLOW FINISHED .. !!!! ##########
@@ -77,18 +77,6 @@ class Player(pg.sprite.Sprite):
         #     self.keypressed = True
         #     self.rect.centery += 50
         ####### !!!! .. BASIC GRID FINISHED .. !!!! #######
-
-        ######### !!!! .. MOUSE MOVEMENT .. !!!! ##########
-        # self.rect.center = (mousex, mousey) # Move Everywhere
-        # self.rect.centerx = mousex  # Move Side to Side
-        # self.rect.centery = mousey # Move Up and Down
-
-        ########## .!. MOUSE CLICK AND DRAG
-        if mouseBttnHeld:
-            self.rect.center = (mousex, mousey)
-        ########## .!. MOUSE CLICK AND DRAG FIN
-
-        ######### !!!! .. MOUSE FINISHED .. !!!! ##########
 
         ##### !!!! .. SCREEN BINDING .. !!!! #####
         # We are binding the player to the screen area

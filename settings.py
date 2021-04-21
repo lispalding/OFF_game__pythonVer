@@ -1,8 +1,8 @@
 # MADE BY: Lisette Spalding
 # FILE NAME: settings.py
 # PROJECT NAME: OFF_game__pythonVer
-# DATE CREATED: 02/25/2021
-# DATE LAST MODIFIED: 02/25/2021
+# DATE CREATED: 04/21/2021
+# DATE LAST MODIFIED: 04/21/2021
 # PYTHON VER. USED: 3.8
 
 ################### IMPORTS ####################
